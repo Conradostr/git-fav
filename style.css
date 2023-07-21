@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-primary:#2F2F33;
+  --f-white: #FFFFFF;
+  --f-blue-primary: #065E7C;
+  --ff-primary: 'Roboto', sans-serif;
+  --bg-input: #06181C;
+  --text-color: #E1E1E6;
+  --bg-thead: #092D38;
+  --table-border-color: #4A808C;
+  --bg-tr-primary: #06161B;
+  --bg-tr-secondary: #15292e;
+  --color-red: #F75A68;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-primary);
+  height: 100vh;
+  width: 100vw;
+
+  padding: 10rem 16rem;
+  font-family: var(--ff-primary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8.7rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  padding: 1.6rem;
+  width: 46.2rem;
+  background-color: var(--bg-input);
+  border: none;
+  border-radius: .5rem;
+  color: var(--f-white);
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  text-transform: uppercase;
+  color: var(--f-white);
+  font-weight: bold;
+  background-color: var(--f-blue-primary);
+  border: none;
+  padding: 1.2rem 3.2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 1.2rem;
+}
+
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+tbody tr:first-child {
+  border-bottom-left-radius: 1.2rem;
+}
+
+tbody tr:last-child {
+  border-bottom-right-radius: 1.2rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--bg-tr-primary);
+}
+
+tbody tr {
+  background-color: var(--bg-tr-secondary);
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+table th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table img {
+  border-radius: 50%;
+  width: 5.6rem;
+}
+
+thead tr {
+  background-color: var(--bg-thead);
+  padding: 1.5rem;
+
+}
+
+tbody td {
+  padding: 1.5rem;
+}
+
+.user {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.user a {
+  text-decoration: none;
+}
+
+.remove {
+  background: none;
+  color: var(--color-red);
+  border: none;
+  cursor: pointer;
+}
